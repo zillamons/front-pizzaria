@@ -1,6 +1,6 @@
 import MenuFuncionario from "../MenuFuncionario/MenuFuncionario"
 
-const HomeFuncionario = () => {
+const ListarProduto = () => {
 
 return (
         <div className="container">
@@ -9,4 +9,4 @@ return (
     )
 }
 
-export default HomeFuncionario
+export default ListarProduto
