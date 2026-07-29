@@ -1,16 +1,17 @@
 import MenuFuncionario from "../MenuFuncionario/MenuFuncionario"
-
-const HomeFuncionario = () => {
-
+ 
+const ListarCategoria = () => {
+ 
     return (
         <div className="container">
-
+          
             <MenuFuncionario/>
-
+ 
             <p>Home Funcionario</p>
-
+ 
         </div>
     )
 }
-
-export default HomeFuncionario
+ 
+export default ListarCategoria
+ 
