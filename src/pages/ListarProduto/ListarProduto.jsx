@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react"
 
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import Modal from "../../componentes/Modal"
 
@@ -23,6 +23,7 @@ const ListarProduto = () =>{
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [idProdutoAExcluir, setIdProdutoAExcluir] = useState(null)
 
+  const navigate = useNavigate();
 
   // useEffect: é um hook do React que serve para executar códigos que ficam fora do controle direito da renderização
   // visual, os chamados "efeitos colaterais"
@@ -150,7 +151,11 @@ const ListarProduto = () =>{
 
                   {/* Botão de Editar */}
                   <button
-                    className="btn btn-sm btn-primary me-2">
+                    className="btn btn-sm btn-primary me-2"
+                    onClick={() =>
+                      navigate(`/produto/editar/${produto.id}`)
+                    }
+                    >
                     <i className="fas fa-pencil-alt"></i>{""}
                     {/* Ícone de editar */}
                   </button>

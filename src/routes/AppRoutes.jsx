@@ -9,6 +9,7 @@
   import ListarProduto from "../pages/ListarProduto/ListarProduto"
   import ListarCategoria from "../pages/ListarCategoria/ListarCategoria"
   import NovoProduto from "../pages/NovoProduto/NovoProduto"
+  import EditarProduto from "../pages/EditarProduto/EditarProduto"
 
 
   // BrowserRoutes: Recarrega toda página
@@ -40,6 +41,10 @@
               <Route 
               path="/produto/novo"
               element={<NovoProduto/>}
+            />
+              <Route 
+              path="/produto/editar/:id"
+              element={<EditarProduto/>}
             />
 
 
